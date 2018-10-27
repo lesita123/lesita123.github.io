@@ -1,0 +1,54 @@
+安裝完git後，開系統CMD操作。
+
+cd desktop 
+//路徑到桌面(或資料夾，需層次進入)
+
+cd ..
+//回上一層
+
+git config --list
+git config -l
+//查看git是否有使用者
+
+git config --global user.name Jack
+//設定帳號
+git config --global user.email Jack@gmail.com
+//設定信箱(使用者輸入第2次為修改)
+
+git init
+//初始化，產生隱藏的.git資料夾
+
+產生隱藏的.git資料夾不可以刪除，刪了紀錄無效。
+
+到github複製個人github網址，
+
+git clone 個人github網址 
+//讓帳號.github.io資料夾下載到桌面
+
+把要上傳的檔案放進帳號.github.io資料夾，
+
+git status
+//檔案追蹤，有變化/未存檔會紅字
+
+git add . 
+//預存進度
+
+git commit -m "說明"
+//儲存版本
+
+git log
+//查看所有版本
+
+git log --oneline
+//查看所有版本，只顯示一行版本號+說明
+
+git reset 版本號 --hard
+//回朔到輸入的版本
+
+git relog
+//顯示回朔歷史
+
+git push origin master
+//把檔案上傳，第一次需登入github
+
+帳號.github.io/資料夾名稱/檔案.html 就是上傳的檔案網址。
